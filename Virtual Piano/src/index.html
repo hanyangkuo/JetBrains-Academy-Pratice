@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Virtual Piano</title>
+    <style>
+        body {
+            background-color: darkgreen;
+        }
+        .container{
+            height: 95vh;
+            display: flex;
+            /*justify-content: center;*/
+            margin-top: 20%;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .white-keys {
+            /*width: 100%;*/
+            position: absolute;
+            z-index: 1;
+        }
+        .black-keys {
+            position: absolute;
+            z-index: 2;
+        }
+        .white-keys kbd {
+            background-color: white;
+            display: inline-block;
+            border: 2px solid gray;
+            text-align: center;
+            padding: 140px 20px 15px 20px;
+        }
+        .black-keys kbd {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            border: 2px solid gray;
+            text-align: center;
+            padding: 100px 15px 15px 15px;
+        }
+        #W{
+            position: absolute;
+            left: 1.75rem;
+        }
+        #E{
+            position: absolute;
+            left: 5rem;
+        }
+        #T{
+            position: absolute;
+            left: 11.5rem;
+        }
+        #Y{
+            position: absolute;
+            left: 14.65rem;
+        }
+        #U{
+            position: absolute;
+            left: 17.75rem;
+        }
+    </style>
+</head>
+<body>
+<div class = "container">
+    <div class="white-keys">
+        <kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><kbd>F</kbd><kbd>G</kbd><kbd>H</kbd><kbd>J</kbd>
+    </div>
+    <div class = "black-keys">
+        <kbd id="W">W</kbd>
+        <kbd id="E">E</kbd>
+        <kbd id="T">T</kbd>
+        <kbd id="Y">Y</kbd>
+        <kbd id="U">U</kbd>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
